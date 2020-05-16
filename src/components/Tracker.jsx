@@ -1,17 +1,19 @@
 import React from "react";
 import { Cards, Chart, CountryPicker } from "./component/export";
-import { fetchData } from "./api";
+import { fetchData } from "./api.js";
 import styles from "./Tracker.module.css";
 
-class Home extends React.Component {
-  state = {
+class Tracker extends React.Component {
+   state = {
     data: {},
-    /* country: "", */
-  };
+     country: "",  
+  }; 
   async componentDidMount() {
     const fetchedData = await fetchData();
+    this.setState({data:fetchedData})
+/*     const fetchedData = await fetchData();
 
-    this.setState({ data: fetchedData });
+    this.setState({ data: fetchedData }); */
   }
   
   handleCountryChange = async (country) => {
@@ -20,21 +22,21 @@ class Home extends React.Component {
     this.setState({ data: fetchedData, country: country });
 
     //set the this.state
-  }; 
+  };  
 
   render() {
     //const { data, country } = this.state;
-    const data = this.state;
+    const {data, country} = this.state;
     return (
-      <div className={styles.container}>
+      <div className={styles.container} style={{overflow: 'auto'}}>
         <Cards data={data} />
-        <CountryPicker handleCountryChange={this.handleCountryChange}   />
-        <Chart /* data={data} country={country}  */ />
-
+         <CountryPicker handleCountryChange={this.handleCountryChange  } />
+        <Chart data={data} country={country}   /> 
+ 
         <br></br>
       </div>
     );
   }
 }
 
-export default Home;
+export default Tracker;

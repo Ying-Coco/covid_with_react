@@ -1,6 +1,6 @@
 body{
     background-color: #E2FADB;
-
+    overflow: auto;
 }
 
 .container{
@@ -16,11 +16,6 @@ body{
     }
 }
 
-.image {
-    width: 270px;
-    height:150px;
-    margin-top: 20px;
-  }
 
 
  

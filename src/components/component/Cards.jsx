@@ -1,13 +1,14 @@
 import React from 'react';
 import {Card, CardContent, Typography, Grid} from '@material-ui/core';
 import CountUp from 'react-countup';
-import styles from './Cards.css';
+import styles from './Cards.module.css';
 import cx from 'classnames';
 
-const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
-    if(!confirmed){
-        return 'Loading....';
-    }
+const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
+  if(!confirmed){
+    return 'Loading....';
+} 
+/* console.log(props); */
     return(
         <div className={styles.container}>
             <Grid container spacing={3} justify="center">
@@ -40,11 +41,10 @@ const Cards = ({data : {confirmed, recovered, deaths, lastUpdate}}) => {
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography variant="body2">Number of deaths cases of covid-19</Typography>
                     </CardContent>
-                </Grid>
-
+                </Grid> 
             </Grid>
 
-        </div>
+        </div> 
     )
 
 } 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'
+import './App.module.css'
 
 import {Link}from "react-router-dom";
 
@@ -8,11 +8,11 @@ function Nav() {
         color:'white'
     }
   return (
-   <nav>
-       <h3> Logo</h3>
+   <nav >
+       <h3>COVID-19 Tracker and Map</h3>
            <ul className="nav-links">
             <Link style={navStyle} to='/Tracker'>
-             <li>Tracker</li>
+             <li >Tracker</li>
              </Link>
              <Link style={navStyle} to='/Map'>
              <li>Map</li>
