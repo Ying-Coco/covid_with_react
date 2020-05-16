@@ -6,18 +6,23 @@ nav{
   display:flex;
   justify-content: space-around;
   align-items:center;
-  min-height:10pxs;
+  min-height:6px;
   background: rgb(73, 79, 82);
+  font-size: large;
+  font-weight: bold;
   color:white;
 
 }
 
-
 .nav-links{
-  width:50%;
+  width: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  list-style-type: none ;
+}
+
+ul{
   list-style: none;
 }
 
