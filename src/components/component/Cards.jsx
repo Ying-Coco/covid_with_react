@@ -34,8 +34,13 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                 </Grid>
                 <Grid item component={Card} xs={12} md={2} className={cx(styles.card, styles.deaths)}>
                     <CardContent>
+<<<<<<< HEAD
                         <Typography color="textSecondary" variant="h4" gutterBottom> Deaths</Typography>
                         <Typography variant="h2">
+=======
+                        <Typography color="textSecondary" variant="h4" gutterBottom> Deceased</Typography>
+                        <Typography variant="h3">
+>>>>>>> 814361f737bd023024e7747bb92302769f3b45e8
                             <CountUp start={0} end={deaths.value} duration={2.5} separator=","></CountUp>
                         </Typography>
                         <Typography color="textSecondary" variant="body1" >{new Date(lastUpdate).toDateString()}</Typography>
