@@ -29,7 +29,7 @@ function Nav() {
         </div>
         <div class="navbar-collapse collapse order-3 dual-collapse2" id="collapsibleNavbar">
           <div class="btn-group">
-            <a class="btn btn-info btn-lg btn-outline-default" href="https://github.com/Ying-Coco/coronavirus_tracker" role="button" id="github">GitHub</a>
+            <a class="btn btn-info btn-lg btn-outline-default" href="https://github.com/Ying-Coco/covid_with_react" role="button" id="github">GitHub</a>
             <a class="btn btn-info btn-lg btn-outline-default" href="https://github.com/mathdroid/covid-19-api" role="button" id="math">Mathdroid</a>
             <a class="btn btn-info btn-lg btn-outline-default" href="https://github.com/NovelCOVID/API" role="button" id="novel">NovelCOVID</a> 
           </div>
