@@ -1,28 +1,26 @@
-.App{
+.App {
   text-align: center;
 }
 
-nav{
-  display:flex;
+nav {
+  display: flex;
   justify-content: space-around;
-  align-items:center;
-  min-height:6px;
-  background: rgb(73, 79, 82);
+  align-items: center;
+  min-height: 8px;
+  background:#353B3C;
   font-size: large;
   font-weight: bold;
-  color:white;
-
+  color: white;
 }
 
-.nav-links{
+.nav-links {
   width: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  list-style-type: none ;
+  list-style-type: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
-

@@ -11,9 +11,9 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
-        <Route exact path="/Map" component={MapBox} />
-        <Route exact path="/" component={Tracker}/>
-        <Route exact path="/Tracker" component={Tracker}></Route>
+          <Route exact path="/Map" component={MapBox} />
+          <Route exact path="/" component={Tracker} />
+          <Route exact path="/Tracker" component={Tracker}></Route>
         </Switch>
       </div>
     </Router>
